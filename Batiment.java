@@ -1,5 +1,5 @@
 /**
- * La classe Batiment permet de gérer des Batiment
+ * La classe Batiment permet de gérer des Batiments
  * @author Dorian
  * @version 1.0.0
  */

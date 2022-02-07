@@ -1,5 +1,5 @@
 /**
- * La classe Immeuble permet de gérer des Immeuble
+ * La classe Immeuble permet de gérer des Immeubles
  * @author Dorian
  * @version 1.0.0
  */
