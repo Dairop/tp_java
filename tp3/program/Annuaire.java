@@ -3,10 +3,10 @@ import java.util.ArrayList;
 
 
 public class Annuaire {
-    private ArrayList <Client> clients = new ArrayList<Client>();
+    private ArrayList <Client> clients;
 
     public Annuaire() {
-        this.clients.clear();
+        this.clients = new ArrayList<Client>();
     }
 
     public ArrayList<Client> getClients() {
