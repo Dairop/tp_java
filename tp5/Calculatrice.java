@@ -26,30 +26,22 @@ public class Calculatrice {
         FileWriter w = new FileWriter("log.txt", true);
 
         System.out.println(v1 + op + v2);
+        String toWrite "\r"+v1+op+v2;
+        double res = 0;
         switch(op){
             case "+": 
-                w.write("\r"+v1+"+"+v2+"="+(v1+v2));
-                w.close();
-                return v1+v2; 
-
+                res = v1+v2; 
             case "-": 
-                w.write("\r"+v1+"-"+v2+"="+(v1-v2));
-                w.close();
-                return v1-v2; 
-
+                res = v1-v2; 
             case "*": 
-                w.write("\r"+v1+"*"+v2+"="+(v1*v2));
-                w.close();
-                return v1*v2; 
-
+                res = v1*v2; 
             case "/": 
-                w.write("\r"+v1+"/"+v2+"="+(v1/v2));
-                w.close();
-                return v1/v2; 
+                res = v1/v2; 
         }
-
-        return 0;
-
+        toWrite += "="+res;
+        w.write(toWrite);
+        w.close();
+        return res;
     }
 
 
