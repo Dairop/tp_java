@@ -265,8 +265,8 @@ class Checker implements Comparator<Player>{
 	retourne une valeur positive si x > y
 	public int compare(Player a, Player b){
 		if (a.score == b.score{
-			//compare using their name ...
-			return /* value */;
+			//compare using their name
+			return a.name.compareTo(b.name);
 		}
 		return a.score - b.score;
 	}
