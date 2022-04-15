@@ -271,6 +271,7 @@ class Checker implements Comparator<Player>{
 		return a.score - b.score;
 	}
 }
+		  
 
 
 
