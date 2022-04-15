@@ -35,8 +35,8 @@ public class Main{
 
 
 
-// classe abstraite: contient au moins une mÈthode abstraite
-//On dÈfinit cette mÈthode dans les classes filles
+// classe abstraite: contient au moins une m√©thode abstraite
+//On d√©finit cette m√©thode dans les classes filles
 //
 //Exemple:
 abstract class Vehicule{
@@ -55,7 +55,7 @@ abstract class Vehicule{
 }
 
 
-//On l'appelle de la maniËre suivante
+//On l'appelle de la mani√®re suivante
 class Voiture extends Vehicule{
 	//...
 	public void activerAirbag() { 
@@ -72,9 +72,9 @@ class Voiture extends Vehicule{
 
 
 
-//interface: comme une classe abstraite mais contient uniquement des mÈthodes abstraites
-//On a pas besoin de prÈciser que la mÈthode est abstraite
-//C'est un package de mÈthodes qu'une classe devra ensuite dÈfinir
+//interface: comme une classe abstraite mais contient uniquement des m√©thodes abstraites
+//On a pas besoin de pr√©ciser que la m√©thode est abstraite
+//C'est un package de m√©thodes qu'une classe devra ensuite d√©finir
 //
 //Exemple:
 interface ActionVehicule{
@@ -82,7 +82,7 @@ interface ActionVehicule{
 	public void passerVitesse();
 }
 
-//On l'appelle de la maniËre suivante
+//On l'appelle de la mani√®re suivante
 class Voiture extends Vehicule implements ActionVehicule {
 	@Override
 	public void freiner() {
@@ -101,11 +101,11 @@ class Voiture extends Vehicule implements ActionVehicule {
 
 
 //Exceptions
-//si on peut renvoyer une exception dans une mÈthode, on lui rajoute throws *le type d'exception*
+//si on peut renvoyer une exception dans une m√©thode, on lui rajoute throws *le type d'exception*
 //
 //Exemple:
 
-//On dÈfinit la classe OperationException 
+//On d√©finit la classe OperationException 
 class OperationException extends Exception {
 	
 	public OperationException() {
@@ -136,7 +136,7 @@ public class Calculatrice {
 
 
 
-//Lire et Ècrire dans des fichiers 
+//Lire et √©crire dans des fichiers 
 //Exemple en csv: https://github.com/Dairop/tp_java/blob/main/tp7/src/IORegionTexte.java
 
 
@@ -227,7 +227,6 @@ public class TriRapide extends Thread {
 
         return j;
     }
-
     
     public void run(){
         if (first < last){
@@ -247,4 +246,38 @@ public class TriRapide extends Thread {
 
 
 }
+
+
+
+
+	
+	
+//Comparateur
+//
+//exemple: trier des "Players" en fonction de leur score
+
+
+class Checker implements Comparator<Player>{
+
+	
+	// retourne une valeur n√©gative si x < y
+	// retourne 0 si x == y
+	retourne une valeur positive si x > y
+	public int compare(Player a, Player b){
+		if (a.score == b.score{
+			//compare using their name ...
+			return /* value */;
+		}
+		return a.score - b.score;
+	}
+}
+
+
+
+
+
+
+
+
+
 
